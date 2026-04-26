@@ -1,88 +1,74 @@
-# Business-Sales-Performance-Analytics
-E-Commerce Sales Analytics Dashboard built with Tableau | Future Interns Project
-# 🛒 E-Commerce Sales Dashboard (2023–2024)
 
-> **Interactive Tableau dashboard analyzing e-commerce sales performance across product categories, geographies, and time periods for 2023–2024.**
+# E-Commerce Sales Dashboard — Future Interns Task 1
 
----
+**A data-driven analysis of e-commerce sales performance uncovering seasonal patterns, geographic opportunities, and actionable revenue recommendations.**
 
-## 📊 Live Dashboard
-
-👉 **[View Interactive Tableau Dashboard](https://public.tableau.com/app/profile/bidusha.shrestha/viz/Ecommerce-Sales-Dashboard-Future-Interns/E-CommerceSalesDashboard2023-2024?publish=yes)**
+**Live Interactive Dashboard:** https://public.tableau.com/app/profile/bidusha.shrestha/viz/Ecommerce-Sales-Dashboard-Future-Interns/E-CommerceSalesDashboard2023-2024?publish=yes
 
 ---
 
-## 📌 Project Overview
+## Executive Summary
 
-This project presents a comprehensive **E-Commerce Sales Analytics Dashboard** built using **Tableau**, covering transactional sales data for **January 2023 – December 2024**. It was developed as part of the **Future Interns** program to analyze key business metrics, uncover seasonal trends, identify top-performing products and markets, and deliver strategic recommendations.
+This project analyzes **3,948 transactions across 10 countries** spanning 24 months (January 2023 – December 2024). Through data cleaning, exploratory analysis, and Tableau visualization, the project identifies revenue drivers, top-performing product categories, geographic concentration risks, and seasonal patterns to guide business strategy.
 
----
+## Key Metrics
 
-## 🎯 Objectives
-
-- Track total revenue, orders, customers, and units sold across 2023–2024
-- Identify top-performing product categories and individual products
-- Analyze geographic sales distribution across 10 countries
-- Monitor monthly and quarterly revenue trends and year-over-year changes
-- Deliver actionable business recommendations based on data findings
-
----
-
-## 🛠️ Tools & Technologies
-
-| Tool | Purpose |
-|------|---------|
-| **Tableau Public** | Dashboard design & interactive visualization |
-| **Microsoft Excel** | Data cleaning, analysis & KPI computation |
-| **GitHub** | Project documentation & version control |
+| Metric | Value | Insight |
+|--------|-------|---------|
+| Total Revenue | £97,234 | Combined 2023–2024 baseline |
+| Peak Month | Nov 2023 (£7,373) | 85–90% above monthly average |
+| Total Orders | 1,195 | Across both years |
+| Unique Customers | 1,124 | Strong repeat purchase base |
+| Top Product Revenue | £14,382 | Picnic Basket Wicker Large |
+| Geographic Concentration | 73.9% UK | International expansion opportunity |
+| Year-over-Year Change | -2.7% | Revenue dip despite more orders in 2024 |
 
 ---
 
-## 📂 Dataset
+## Visualizations
 
-| Field | Details |
-|-------|---------|
-| **Source** | Online Retail Dataset — Kaggle / UCI Machine Learning Repository |
-| **Period** | January 2023 – December 2024 |
-| **Raw Records** | 4,066 transactions |
-| **Cleaned Records** | 3,948 transactions (after removing nulls & returns) |
-| **Key Columns** | InvoiceNo, StockCode, Description, Category, Quantity, InvoiceDate, UnitPrice, CustomerID, Country, Revenue |
+### Monthly Revenue Trend (2023 vs 2024)
+![Monthly Trend](dashboard/monthly_trend.png)
 
-> 📁 Dataset is available in the [`/dataset`](./dataset/) folder.
+**Key Findings:**
+- Clear holiday spike in **November 2023 reaching £7,373** — the highest single month across both years
+- Q4 (Oct–Dec) accounts for approximately **38% of annual revenue** consistently across both years
+- January and February are the weakest months — dropping to £2,059–£2,579
+- Q1 and Q2 improved year-over-year in 2024; overall decline driven by a weaker Q3 and Q4
 
----
+### Revenue by Product Category
+![Category Analysis](dashboard/category_analysis.png)
 
-## 📈 Key Performance Indicators (KPIs)
+**Key Findings:**
+- **Kitchenware leads** with £18,817 (19.4% of total revenue) across 446 orders
+- Outdoor category delivers the **highest single-product revenue** — £14,382 from one SKU alone
+- Top 4 categories (Kitchenware, Outdoor, Seasonal, Home Decor) account for **60.7% of revenue**
+- Kitchen and Craft are underperforming relative to their unit counts — pricing opportunity exists
 
-| Metric | Value |
-|--------|-------|
-| 💰 **Total Revenue (2023–2024)** | £97,234 |
-| 📦 **Total Orders** | 1,195 |
-| 👥 **Unique Customers** | 1,124 |
-| 🛍️ **Units Sold** | 31,421 |
-| 💳 **Average Order Value (AOV)** | £81.37 |
-| 📉 **Year-over-Year Revenue Change** | -2.7% (2023 → 2024) |
+### Geographic Revenue Distribution
+![Country Sales](dashboard/country_sales.png)
 
-### Year-over-Year Breakdown
-
-| Year | Revenue (£) | Orders | Customers | Units | AOV (£) |
-|------|-------------|--------|-----------|-------|---------|
-| 2023 | £49,290 | 582 | 564 | 15,931 | £84.69 |
-| 2024 | £47,944 | 613 | 594 | 15,490 | £78.21 |
-
-### Quarterly Revenue
-
-| Quarter | 2023 (£) | 2024 (£) |
-|---------|----------|----------|
-| Q1 | £7,341.99 | £8,292.67 |
-| Q2 | £10,917.42 | £12,001.23 |
-| Q3 | £12,627.06 | £11,160.17 |
-| Q4 | £18,403.66 | £16,489.78 |
-| **Total** | **£49,290** | **£47,944** |
+**Key Findings:**
+- **UK dominates:** 73.9% of total revenue (£71,873) from 895 orders
+- **Netherlands has the highest AOV:** £104.11 — premium buying behavior without any targeted campaigns
+- France (£5,980), Germany (£5,652), Netherlands (£5,309) are all growing organically
+- 6 additional countries contribute £8,219 combined — largely untapped with minimal marketing spend
 
 ---
 
-## 🏆 Top 5 Products by Revenue
+## Quarterly Revenue Breakdown
+
+| Quarter | 2023 (£) | 2024 (£) | Change |
+|---------|----------|----------|--------|
+| Q1 | £7,341.99 | £8,292.67 | ▲ +13.0% |
+| Q2 | £10,917.42 | £12,001.23 | ▲ +9.9% |
+| Q3 | £12,627.06 | £11,160.17 | ▼ -11.6% |
+| Q4 | £18,403.66 | £16,489.78 | ▼ -10.4% |
+| **Total** | **£49,290** | **£47,944** | **▼ -2.7%** |
+
+---
+
+## Top 5 Products by Revenue
 
 | Rank | Product | Category | Revenue (£) | Units Sold |
 |------|---------|----------|-------------|------------|
@@ -94,132 +80,160 @@ This project presents a comprehensive **E-Commerce Sales Analytics Dashboard** b
 
 ---
 
-## 📦 Revenue by Product Category
+## Business Recommendations
 
-| Rank | Category | Revenue (£) | Revenue % | Orders | Units Sold |
-|------|----------|-------------|-----------|--------|------------|
-| 1 | Kitchenware | £18,817.36 | 19.4% | 446 | 4,553 |
-| 2 | Outdoor | £14,381.87 | 14.8% | 191 | 1,689 |
-| 3 | Seasonal | £13,052.50 | 13.4% | 334 | 3,233 |
-| 4 | Home Decor | £12,690.86 | 13.1% | 574 | 6,482 |
-| 5 | Novelty | £9,810.21 | 10.1% | 308 | 2,905 |
-| 6 | Party Supplies | £9,206.90 | 9.5% | 345 | 3,177 |
-| 7 | Bags | £8,912.73 | 9.2% | 499 | 4,949 |
-| 8 | Craft | £5,506.10 | 5.7% | 169 | 1,476 |
-| 9 | Kitchen | £4,855.45 | 5.0% | 315 | 2,957 |
+### 1. EU Market Localisation & Expansion
+**Priority: HIGH | Timeline: 6 months | Potential Impact: £40K–£70K additional revenue**
 
----
+**Current Situation:** France, Germany, and Netherlands are generating £16,942 combined with zero targeted campaigns. Netherlands AOV of £104.11 is the highest of any market.
 
-## 🌍 Revenue by Country
+**Action Plan:**
+- Localise top-seller product listings for DE/FR/NL markets
+- Add EU-friendly payment options (iDEAL for Netherlands, Carte Bancaire for France)
+- Translate descriptions for the top 20 bestselling SKUs
+- Launch country-specific email campaigns targeting existing EU customers
 
-| Rank | Country | Revenue (£) | Revenue % | Orders | AOV (£) |
-|------|---------|-------------|-----------|--------|---------|
-| 1 | United Kingdom | £71,873.17 | 73.9% | 895 | £80.31 |
-| 2 | France | £5,980.37 | 6.2% | 60 | £99.67 |
-| 3 | Germany | £5,652.19 | 5.8% | 75 | £75.36 |
-| 4 | Netherlands | £5,309.47 | 5.5% | 51 | £104.11 |
-| 5 | EIRE (Ireland) | £2,393.73 | 2.5% | 34 | £70.40 |
-| 6 | Spain | £1,928.75 | 2.0% | 25 | £77.15 |
-| 7 | Belgium | £1,696.76 | 1.7% | 23 | £73.77 |
-| 8 | Portugal | £845.22 | 0.9% | 13 | £65.02 |
-| 9 | Switzerland | £795.77 | 0.8% | 9 | £88.42 |
-| 10 | Australia | £758.55 | 0.8% | 10 | £75.86 |
+**Why:** These markets are buying organically — a focused campaign could 3–4× their current contribution.
 
 ---
 
-## 🔍 Key Insights & Findings
+### 2. Seasonal Inventory Pre-Build (Q4 Surge Strategy)
+**Priority: HIGH | Timeline: Q3 annually | Potential Impact: +£20K–£40K Q4 revenue**
 
-### 📈 1. Seasonal Demand Surge — November is the Biggest Month
-- November revenue is **85–90% higher than the monthly average** due to holiday shopping demand
-- The **Q4 period (Oct–Dec) accounts for approximately 38% of annual revenue** across both years
-- November 2023 peaked at £7,372 and November 2024 at £5,768 — both far above the £3,000–£4,000 monthly average
+**Current Problem:** November revenue spikes 85–90% above monthly average, but Q4 2024 dropped £1,914 vs Q4 2023 — indicating stockouts or missed demand capture.
 
-### 🏆 2. Kitchenware & Home Decor Dominate Revenue
-- Kitchenware (19.4%) and Home Decor (13.1%) together account for over **32% of total revenue**
-- Kitchenware leads with £18,817 in revenue across 446 orders, with a consistent average unit price of £4.14
-- The top 3 Kitchenware products alone (Jam Making Set, Regency Cakestand, Cake Tins) generated over £18,800
+**Action Plan:**
+- Begin inventory build in September for Seasonal, Kitchenware, and Party Supplies categories
+- Launch "Early Bird" holiday promotions in October to smooth demand
+- Pre-schedule email campaigns for November 1st, Black Friday, and Cyber Monday
+- Introduce gift bundles pairing top sellers (e.g., Jam Making Set + Cake Tins + Cakestand)
 
-### 🌍 3. UK Market Concentration Risk
-- **United Kingdom accounts for ~74% of all revenue (£71,873)** — a significant single-market dependency
-- Germany, France, Netherlands, and EIRE are contributing organically without any targeted campaigns
-- Netherlands has the **highest AOV at £104.11** — indicating premium buying behavior in that market
-
-### 📉 4. Year-over-Year Slight Revenue Decline
-- Revenue dipped **-2.7%** from 2023 (£49,290) to 2024 (£47,944), despite order count increasing by 5.3% (582 → 613)
-- AOV dropped from £84.69 in 2023 to £78.21 in 2024 — suggesting smaller basket sizes or lower-priced product mix
-- Q1 and Q2 improved year-over-year; the decline was driven by a weaker Q3 and Q4 in 2024
-
-### ⚠️ 5. Product Returns — Recoverable Cost Drain
-- Approximately **3% of all transaction lines are customer returns** (negative quantity invoices)
-- Returns cluster in Party Supplies and Seasonal categories — likely due to size/expectation mismatch
-- Reducing return rate from 3% to 1.5% could save approximately **£6K–£10K annually**
-
-### 💡 6. B2B Wholesale — High AOV Untapped Segment
-- Multiple invoices show bulk orders (50–200 units) indicating wholesale/trade buyers exist in the data
-- B2B customers have **3–5× higher AOV** than retail and tend to place recurring orders
-- Top 30 bulk-order customers represent a potential **£25K recurring revenue** opportunity if formally converted to B2B accounts
+**Expected Outcome:** Recover the £1,914 Q4 gap and grow beyond 2023 Q4 peak levels.
 
 ---
 
-## 🚀 Strategic Recommendations
+### 3. Fix the January–February Revenue Cliff
+**Priority: CRITICAL | Timeline: Immediate | Potential Impact: £15K–£25K recovery**
 
-| # | Recommendation | Priority | Timeline | Expected Impact |
-|---|---------------|----------|----------|-----------------|
-| 1 | Seasonal inventory pre-build (Sep–Oct) | 🔴 HIGH | Q3 annually | +£20K–£40K Q4 revenue |
-| 2 | EU market localisation & campaigns | 🔴 HIGH | 6 months | £40K–£70K new revenue |
-| 3 | Expand Kitchenware & Home Decor SKUs | 🟡 MEDIUM | Q1 next year | +20% category revenue |
-| 4 | Wholesale B2B portal launch | 🟡 MEDIUM | 9 months | £25K recurring revenue |
-| 5 | Reduce product return rate to <1.5% | 🟡 MEDIUM | 3 months | Save £6K–£10K/year |
-| 6 | Post-holiday Jan–Feb retention campaign | 🟢 LOW | Jan annually | Reduce Jan drop by 30% |
+**Current Problem:** Revenue crashes to £2,059–£2,579 in Jan–Feb — a 70%+ drop from the November peak.
 
----
+**Action Plan:**
+- Post-Christmas "New Year Home Refresh" campaign (Jan 1–31) targeting Home Decor
+- Gift card strategy in December to drive delayed January spending
+- "Winter Clearance" on Seasonal inventory to move Q4 stock and drive January volume
+- Email win-back campaigns to customers who last purchased in Q4
 
-## 🖼️ Dashboard Preview
-
-> 📸 *Add your Tableau dashboard screenshot here*
-
-![E-Commerce Sales Dashboard](dashboard/dashboard_screenshot.png)
+**Expected Recovery:** Push Jan–Feb average from £2,059 up to £3,000–£3,500 per month.
 
 ---
 
-## 🗂️ Repository Structure
+### 4. Kitchenware & Home Decor SKU Expansion
+**Priority: MEDIUM | Timeline: Q1 Next Year | Potential Impact: +20% category revenue (~£6K)**
+
+**Current Situation:** Kitchenware (19.4%) and Home Decor (13.1%) are the top two categories yet carry low average unit prices (£4.14 and £1.96), indicating high volume but low margin per unit.
+
+**Action Plan:**
+- Expand with premium variants of bestsellers (larger cake tin sets, premium wicker ranges)
+- Bundle complementary items (Cake Tins + Jam Set + Cakestand) at a small discount
+- A/B test bundle pricing at 10% vs 15% discount to identify optimal AOV lift point
+
+**Expected Outcome:** 20% revenue uplift in top two categories = approximately £6,300 additional revenue.
+
+---
+
+### 5. Wholesale B2B Portal Launch
+**Priority: MEDIUM | Timeline: 9 months | Potential Impact: £25K recurring revenue**
+
+**Current Situation:** Multiple invoices show bulk orders of 50–200 units indicating wholesale/trade buyers already exist — but are being served at full retail prices.
+
+**Action Plan:**
+- Create a dedicated wholesale landing page with tiered pricing (10%, 20%, 30% off at volume thresholds)
+- Identify top 30 bulk-order customers and reach out with a personalized B2B proposal
+- Offer net-30 payment terms and dedicated account management for B2B accounts
+
+**Why:** B2B customers have 3–5× higher AOV than retail and place recurring orders — converting just 30 accounts could add £25K in predictable annual revenue.
+
+---
+
+## Tech Stack
+
+| Tool | Purpose |
+|------|---------|
+| **Tableau Public** | Interactive dashboard & visualization |
+| **Microsoft Excel** | Data cleaning, KPI computation, analysis |
+| **GitHub** | Version control & project documentation |
+
+---
+
+## Project Structure
 
 ```
 ecommerce-sales-dashboard/
-│
-├── README.md                        # Project documentation (this file)
+├── README.md                        # Project documentation
 ├── dataset/
-│   └── ecommerce_data.csv           # Cleaned dataset used for analysis
+│   └── ecommerce_data.csv           # Cleaned dataset (3,948 rows)
 ├── dashboard/
-│   └── dashboard_screenshot.png     # Tableau dashboard screenshot
+│   ├── dashboard_screenshot.png     # Main Tableau dashboard screenshot
+│   ├── monthly_trend.png            # Monthly revenue chart
+│   ├── category_analysis.png        # Category breakdown chart
+│   └── country_sales.png            # Geographic distribution chart
 └── images/
-    └── preview.png                  # README banner/preview image
+    └── preview.png                  # README banner image
 ```
 
 ---
 
-## 🚀 How to View the Dashboard
+## How to Use
 
-1. Click the **[Live Dashboard Link](https://public.tableau.com/app/profile/bidusha.shrestha/viz/Ecommerce-Sales-Dashboard-Future-Interns/E-CommerceSalesDashboard2023-2024?publish=yes)** above
-2. Use the **Year** filter to toggle between 2023 and 2024
-3. Use **Category** and **Country** filters to drill down into specific segments
-4. Hover over any chart element for detailed tooltips
+### View Interactive Dashboard
+https://public.tableau.com/app/profile/bidusha.shrestha/viz/Ecommerce-Sales-Dashboard-Future-Interns/E-CommerceSalesDashboard2023-2024?publish=yes
 
----
-
-## 👩‍💻 Author
-
-**Bidusha Shrestha**
-- 🌐 Tableau Public: [View Profile](https://public.tableau.com/app/profile/bidusha.shrestha)
-- 💼 GitHub: *[Add your GitHub profile link]*
-- 🏢 Program: Future Interns Internship 2024
+### Explore the Dataset
+- Open `dataset/ecommerce_data.csv` in Excel or any data tool
+- Key columns: `InvoiceNo`, `Category`, `Quantity`, `UnitPrice`, `CustomerID`, `Country`, `Revenue`, `Year`, `Month`, `Quarter`
 
 ---
 
-## 🏷️ Topics
+## Data Source
 
-`tableau` `data-visualization` `ecommerce` `sales-analytics` `dashboard` `future-interns` `business-intelligence` `excel` `data-analysis` `retail-analytics`
+- **Dataset:** Online Retail Dataset — Kaggle / UCI Machine Learning Repository
+- **Time Period:** January 2023 – December 2024
+- **Raw Records:** 4,066 transactions
+- **Cleaned Records:** 3,948 transactions (nulls & return invoices removed)
+- **Countries:** 10
+- **Product Categories:** 9
 
 ---
 
-⭐ *If you found this project useful, please consider giving it a star!*
+## Key Learning Outcomes
+
+✅ Data cleaning and validation (removing nulls, handling returns)  
+✅ Exploratory data analysis (EDA)  
+✅ Time series analysis and seasonality detection  
+✅ Geographic segmentation and market analysis  
+✅ Product and category ranking analysis  
+✅ Data visualization best practices with Tableau  
+✅ Business analysis and strategic recommendations  
+✅ Professional Git workflow and documentation  
+
+---
+
+## Business Impact Summary
+
+| Initiative | Revenue Impact | Timeline |
+|-----------|----------------|----------|
+| EU Market Localisation | £40K–£70K | 6 months |
+| Q4 Seasonal Pre-Build | +£20K–£40K | Q3 annually |
+| Jan–Feb Revenue Recovery | £15K–£25K | Immediate |
+| Kitchenware & Home Decor Expansion | +£6K | Q1 next year |
+| Wholesale B2B Portal | £25K recurring | 9 months |
+| **Total Potential** | **£106K–£166K** | **6–12 months** |
+
+---
+
+**Project Completed:** April 2026  
+**Built by:** Bidusha Shrestha  
+**For:** Future Interns | Data Analytics Track  
+
+Live Dashboard: https://public.tableau.com/app/profile/bidusha.shrestha/viz/Ecommerce-Sales-Dashboard-Future-Interns/E-CommerceSalesDashboard2023-2024?publish=yes  
+GitHub: https://github.com/YOUR-USERNAME/ecommerce-sales-dashboard
