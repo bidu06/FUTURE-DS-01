@@ -28,7 +28,7 @@ This project analyzes **3,948 transactions across 10 countries** spanning 24 mon
 ## Visualizations
 
 ### Monthly Revenue Trend (2023 vs 2024)
-![Monthly Trend](dashboard/monthly_trend.png)
+![Monthly Trend](charts/monthly_trend.png)
 
 **Key Findings:**
 - Clear holiday spike in **November 2023 reaching £7,373** — the highest single month across both years
