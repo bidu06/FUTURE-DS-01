@@ -37,7 +37,7 @@ This project analyzes **3,948 transactions across 10 countries** spanning 24 mon
 - Q1 and Q2 improved year-over-year in 2024; overall decline driven by a weaker Q3 and Q4
 
 ### Revenue by Product Category
-![Category Analysis](dashboard/category_analysis.png)
+![Category Analysis](charts/category_analysis.png)
 
 **Key Findings:**
 - **Kitchenware leads** with £18,817 (19.4% of total revenue) across 446 orders
@@ -46,7 +46,7 @@ This project analyzes **3,948 transactions across 10 countries** spanning 24 mon
 - Kitchen and Craft are underperforming relative to their unit counts — pricing opportunity exists
 
 ### Geographic Revenue Distribution
-![Country Sales](dashboard/country_sales.png)
+![Country Sales](charts/country_sales.png)
 
 **Key Findings:**
 - **UK dominates:** 73.9% of total revenue (£71,873) from 895 orders
