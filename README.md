@@ -236,4 +236,4 @@ https://public.tableau.com/app/profile/bidusha.shrestha/viz/Ecommerce-Sales-Dash
 **For:** Future Interns | Data Analytics Track  
 
 Live Dashboard: https://public.tableau.com/app/profile/bidusha.shrestha/viz/Ecommerce-Sales-Dashboard-Future-Interns/E-CommerceSalesDashboard2023-2024?publish=yes  
-GitHub: https://github.com/bidu06/Business-Sales-Performance-Analytics
+GitHub: [https://github.com/bidu06/Business-Sales-Performance-Analytics](https://github.com/bidu06/FUTURE-DS-01)
